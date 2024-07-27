@@ -23,6 +23,7 @@ import React from "react";
 import Loader from "../Loader";
 
 import FloatingToolbarPlugin from "./plugins/FloatingToolbarPlugin";
+import Comments from "../Comment";
 
 // Catch any errors that occur during Lexical updates and log them
 // or throw them as needed. If you don't throw them, Lexical will
@@ -81,6 +82,7 @@ export function Editor({
           <LiveblocksPlugin>
             <FloatingComposer className="w-[350px]" />
             <FloatingThreads threads={threads} />
+            <Comments />
           </LiveblocksPlugin>
         </div>
       </div>
